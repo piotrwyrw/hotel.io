@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Overlook</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/extra.css">
+  <script src="../js/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="logo-container">
+    <img class="logo" src="../rsrc/logo.png"/>
+  </div>
+  <div class="content-wrapper">
+    <div class="content1">
+      <br>
+      <a class="shadow title">The Restaurant</a>
+    </div>
+    <div class="content2">
+      <a class="shadow title">Today's Menu</a>
+      <br><br>
+      <div style="width: 100%; display: flex; flex-direction: row-reverse; justify-content: center">
+        <img src="../rsrc/soup.jpg" class="pic-small xpic"/>
+        <div style="display: block; padding: 20px">
+          <a class="title shadow">Tomato Soup</a>
+          <a class="smaller subtxt">Made using tomatoes from a nearby farm</a>
+        </div>
+      </div>
+      <div style="width: 100%; display: flex; flex-direction: row-reverse; justify-content: center">
+        <div style="display: block; padding: 20px">
+          <a class="title shadow">Chicken Rice</a>
+          <a class="smaller subtxt">Specialty of the House</a>
+        </div>
+        <img src="../rsrc/rice.jpg" class="pic-small xpic"/>
+      </div>
+    </div>
+  </div>
+  <div class="nav-wrapper">
+    <div class="navbar">
+      <img src="../rsrc/door.png" onclick="redirect('room.html')" class="navbar-entry anim-shift clickable"/>
+      <img src="../rsrc/pool.png" onclick="redirect('pool.html')" class="navbar-entry anim-shift clickable"/>
+      <img src="../rsrc/question.png" onclick="redirect('question.html')" class="navbar-entry anim-shift clickable"/>
+      <img src="../rsrc/home.png" onclick="redirect('home.html')" class="navbar-entry anim-shift clickable"/>
+    </div>
+  </div>
+</div>
+</body>
+</html>
