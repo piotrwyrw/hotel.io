@@ -7,6 +7,14 @@ function tab_pic(url) {
     return "<img src='" + url + "' class='pic-small pic-tab'>";
 }
 
+function tab_pic_a(url) {
+    return "<img class='pic-small pic-tab' src='" + url + "' onclick=ref()>";
+}
+
+function ref() {
+    alert("How'd you like some ice cream, Doc?");
+}
+
 function price(n) {
     return "$" + n + ",-";
 }
