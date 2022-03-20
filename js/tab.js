@@ -5,7 +5,7 @@ let tab_struc = {
         ["Rice & Chicken", "Specialty of the house", price(15), tab_pic("../rsrc/rice.jpg")],
         ["Fish & Chips", idk(), price(15), tab_pic("../rsrc/fish.jpg")],
         ["Honey Shrimps", idk(), price(20), tab_pic("../rsrc/shrimps.jpg")],
-        ["Chocolate Ice Cream", idk(), price(7), tab_pic_a("../rsrc/ice.jpg", "alert('How'd you like some ice cream, Doc?')")],
+        ["Chocolate Ice Cream", idk(), price(7), tab_pic_a("../rsrc/ice.jpg")],
         ["Hamburger", idk(), price(12), tab_pic("../rsrc/burger.jpeg")]
     ]
 };
