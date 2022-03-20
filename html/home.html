@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/extra.css">
   <script src="../js/init.js"></script>
+  <script src="../js/format.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -15,7 +16,7 @@
   <div class="content-wrapper">
     <div class="content1">
       <a class="shadow title">Good Morning!</a>
-      <a class="smaller">Saturday</a>
+      <a class="smaller" id="day-name-here">${DAY_NAME_HERE}</a>
     </div>
     <div class="content2">
       <a class="shadow title">Weather Today</a>
@@ -35,4 +36,7 @@
   </div>
 </div>
 </body>
+<script>
+  inject_day_str("day-name-here");
+</script>
 </html>

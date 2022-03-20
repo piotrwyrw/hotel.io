@@ -9,26 +9,31 @@
   <script src="../js/format.js"></script>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="hide-this">
   <div class="logo-container">
     <img class="logo" src="../rsrc/logo.png"/>
   </div>
   <div class="content-wrapper">
     <div class="content1">
       <br>
-      <a class="shadow title">Your Room</a>
+      <a class="shadow title">Work at the Overlook</a>
     </div>
     <div class="content2">
-      <img src="../rsrc/door.png" class="pic-small" onclick="redirect('hidden.html')">
-      <div>
-        <a class="title inline">Number <a class="green title shadow inline">217</a></a>
-      </div>
-      <a class="subtxt" id="rand-dir-here">In the ${RAND_DIR_HERE} Wing</a>
+      <a class="shadow title">Join our Team!</a>
+      <a class="smaller">Become the Winter Caretaker at the Overlook hotel!</a>
+      <br><br>
+      <a class="shadow title mayshow">Credits</a>
+      <a class="smaller mayshow">The Overlook hotel website was designed by piotrwyrw.</a>
+      <a class="smaller mayshow">This project contains many references to the</a>
+      <a class="smaller mayshow">Shining and its hotel, the Overlook.</a>
+      <a class="smaller mayshow">Congratulations on making it that far.</a>
+      <a class="smaller mayshow">~ Jack Torrance</a>
     </div>
   </div>
   <div class="nav-wrapper">
     <div class="navbar">
       <img src="../rsrc/food.png" onclick="redirect('restaurant.html')" class="navbar-entry anim-shift clickable"/>
+      <img src="../rsrc/door.png" onclick="redirect('room.html')" class="navbar-entry anim-shift clickable"/>
       <img src="../rsrc/pool.png" onclick="redirect('pool.html')" class="navbar-entry anim-shift clickable"/>
       <img src="../rsrc/question.png" onclick="redirect('question.html')" class="navbar-entry anim-shift clickable"/>
       <img src="../rsrc/home.png" onclick="redirect('home.html')" class="navbar-entry anim-shift clickable"/>
@@ -37,6 +42,12 @@
 </div>
 </body>
 <script>
-  inject_rand_dir("rand-dir-here");
+  let val = Math.floor(Math.random() * 10);
+  let elements = document.getElementsByClassName("mayshow");
+  if (val != 5) {
+    for (let i = 0; i < elements.length; i ++) {
+      elements[i].style.display = "none";
+    }
+  }
 </script>
 </html>

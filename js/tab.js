@@ -2,7 +2,11 @@ let tab_struc = {
     rows: [
         ["", "Description", "Price", ""],
         ["Tomato Soup", "Made with tomatoes from a nearby farm", price(5), tab_pic("../rsrc/soup.jpg")],
-        ["Rice & Chicken", "Specialty of the house", price(15), tab_pic("../rsrc/rice.jpg")]
+        ["Rice & Chicken", "Specialty of the house", price(15), tab_pic("../rsrc/rice.jpg")],
+        ["Fish & Chips", idk(), price(15), tab_pic("../rsrc/fish.jpg")],
+        ["Honey Shrimps", idk(), price(20), tab_pic("../rsrc/shrimps.jpg")],
+        ["Chocolate Ice Cream", idk(), price(7), tab_pic("../rsrc/ice.jpg")],
+        ["Hamburger", idk(), price(12), tab_pic("../rsrc/burger.jpeg")]
     ]
 };
 
