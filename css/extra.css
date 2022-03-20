@@ -35,6 +35,10 @@
     max-width: 150px !important;
 }
 
+.pic-tab {
+    padding: 10px;
+}
+
 .green {
     color: #16a085 !important;
 }

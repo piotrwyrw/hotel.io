@@ -48,15 +48,14 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 /* The navbar originally wasn't transparent, hence the excessive styling */
 .navbar {
-    position: absolute;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    padding: 15px;
     bottom: 10px;
     min-width: 500px;
     border-radius: 30px;

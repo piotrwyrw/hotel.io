@@ -5,7 +5,10 @@
   <title>The Overlook</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/extra.css">
-  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../css/table.css">
+  <script src="../js/format.js"></script>
+  <script src="../js/tab.js"></script>
+  <script src="../js/init.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -24,16 +27,18 @@
         <img src="../rsrc/soup.jpg" class="pic-small xpic"/>
         <div style="display: block; padding: 20px">
           <a class="title shadow">Tomato Soup</a>
-          <a class="smaller subtxt">Made using tomatoes from a nearby farm</a>
+          <a class="smaller subtxt">Made with tomatoes from a nearby farm</a>
         </div>
       </div>
       <div style="width: 100%; display: flex; flex-direction: row-reverse; justify-content: center">
         <div style="display: block; padding: 20px">
-          <a class="title shadow">Chicken Rice</a>
+          <a class="title shadow">Chicken & Rice</a>
           <a class="smaller subtxt">Specialty of the House</a>
         </div>
         <img src="../rsrc/rice.jpg" class="pic-small xpic"/>
       </div>
+      <a class="shadow title" style="padding: 40px;">Full Menu</a>
+      <div id="div-menu"></div>
     </div>
   </div>
   <div class="nav-wrapper">
@@ -46,4 +51,7 @@
   </div>
 </div>
 </body>
+<script>
+  create_table("div-menu", "menu-tab", tab_struc, tab_settings);
+</script>
 </html>
