@@ -1,0 +1,13 @@
+/* Extended styling of the table, that is not (yet!) supported by the JS script */
+
+:root {
+    --table-darker-bg: #e5e5e5;
+}
+
+.menu-tab-tr:first-child {
+    background-color: var(--table-darker-bg);
+}
+
+.menu-tab-tr:hover {
+    background-color: var(--table-darker-bg);
+}

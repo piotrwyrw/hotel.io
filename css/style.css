@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #34495e;
+}
+
+.logo-container {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    max-width: 500px;
+    transform: rotate(-5deg);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.content1 {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    border-radius: 50px 50px 0 0;
+    background-color: #e0e0e0;
+
+    height: 150px;
+    text-align: center;
+}
+
+.content1 a {
+    display: block;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+/* The navbar originally wasn't transparent, hence the excessive styling */
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    min-width: 500px;
+    border-radius: 30px;
+    background-color: #222222;
+    /*background-color: transparent;*/
+}
+
+.content2 {
+    margin-top: -45px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    background-color: #ffffff;
+    border-radius: 50px;
+
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content2 a {
+    display: block;
+}
+
+.navbar-entry {
+    max-width: 50px;
+    display: inline;
+    padding-left: 30px;
+    filter: invert(0.8) drop-shadow(5px 5px 5px #afafaf);
+}
